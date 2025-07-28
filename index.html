@@ -12,7 +12,7 @@
     <body>
         <nav class="navbar navbar-expand-lg  bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand text-white" href="#" >Bootstrap testing page :</a>
+              <p class="navbar-brand text-white p-1 mt-2"  >Bootstrap testing page </p>
               <button class="navbar-toggler  text-success bg-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -22,30 +22,87 @@
                     <a class="text-white nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Features</a>
+                    <a class="nav-link text-white" href="#fe">features</a>
+                  </li>
+                  <li class="nav-item"> 
+                    <a class="nav-link text-white" href="#formee">form</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-white" aria-disabled="true">footer</a>
+                    <a class="nav-link  text-white" aria-disabled="true" href="#foot">footer</a>
                   </li>
                   <li><i class="fa-brands fa-bootstrap bg-white text-primary"></i></li>
                 </ul>
               </div>
             </div>
           </nav>
-            <h1 class="text-center">Welcome to my website for bootstrap training <i class="fa-brands fa-bootstrap bg-white text-primary"></i></h1>
+            <h1 class="text-center">Welcome to my website for bootstrap training <i class="fa-brands fa-bootstrap bg-white text-primary my-5"></i></h1>
+            <section class="bg-info text-white p-3" style="width: 100vw;">
+              <h2 class="ms-2">we are going to learn about some predifined classes in bootstrap :</h2>
+              <h6>flex box :</h6>
+              <p class="fw-bold">we will try to align and center this elements in the page using flex box with a gap between them</p>
+              <div class="d-flex justify-content-center align-items-center gap-1">
+                <i class="fa-solid fa-circle-user"></i>
+                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-car"></i>
+                <i class="fa-solid fa-plane"></i>
+                <i class="fa-solid fa-ship"></i>
+                <i class="fa-solid fa-train"></i>
+                <i class="fa-solid fa-bus"></i>
+              </div>
+              <h6>how to use bootstrap with img elements </h6>
+              <p class="fw-bold">image-fluid :</p>
+              <p>the image will be responsive and will take the width of the container </p>
+              <div class="w-25 " style="margin-left: 50%; translate:-50%">
+                <img src="dyda3.webp" alt="image fluid test " class="img-fluid">
+              </div>
+              <p class="fw-bold" id="fe">rounded :</p>
+              <p>the image will be rounded</p>
+              <img src="./getimg_ai_img-uXZgKW7ZjTW9WBdjLofIG.webp" alt="" class="rounded w-25" style="margin-left: 50%; translate:-50%">
+              <p class="fw-bold">rounded-circle :</p>
+              <p>the image will be rounded-circle</p>
+              <img src="./getimg_ai_img-uXZgKW7ZjTW9WBdjLofIG.webp" alt="img3" class=" rounded-circle w-25" style="margin-left: 50%; translate:-50%">
+              <p class="fw-bold">image-thumbnail :</p>
+              <p>the image will be image-thumbnail</p>
+              <img src="./getimg_ai_img-uXZgKW7ZjTW9WBdjLofIG.webp" alt="img4" class=" img-thumbnail w-25 "style="margin-left: 50%; translate:-50%">
+              <h6>how to use grid in bootstrap :</h6>
+              <p>we can create rows and define the number of columns in each row</p>
+                  <div class="container bg-dark text-white p-3 text-center w-50">
+                    <div class="row">
+                    <div class="col bg-success text-white p-3 w-25">
+                      <h3>column 1</h3>
+                    </div>
+                    <div class="col bg-primary text-white p-3 ">
+                      <h3>column 2</h3>
+                    </div>
+                    </div> 
+                  </div>
+              <h6>colors in bootstrap :</h6>
+              <p class="fw-bold d-inline-block " style=" ">bg-primary : </p>
+              <div class="bg-primary d-inline-block " style="width: 2vw; height: 2vh;"></div>
+               
+              <p class="fw-bold d-inline-block" style="border-left: 3px solid black ; padding-left: 0.4vw;">bg-secondary : </p>
+              <div class="bg-secondary d-inline-block " style="width: 2vw; height: 2vh;"></div>
+               
+              <p class="fw-bold d-inline-block" style="border-left: 3px solid black ; padding-left: 0.4vw;">bg-success : </p>
+              <div class="bg-success d-inline-block " style="width: 2vw; height: 2vh;"></div>
+              <p class="fw-bold d-inline-block" style="border-left: 3px solid black ; padding-left: 0.4vw;">bg-danger : </p>
+              <div class="bg-danger d-inline-block " style="width: 2vw; height: 2vh;"></div>
+              <p class="fw-bold d-inline-block" style="border-left: 3px solid black ; padding-left: 0.4vw;">bg-warning : </p>
+              <div class="bg-warning d-inline-block " style="width: 2vw; height: 2vh;"></div>
+              <br>
+              <a href="https://getbootstrap.com/docs/5.3/utilities/colors/#colors" target="_blank"><button class="btn btn-secondary ">see more</button></a>
+            </section>
             <h2 class="ms-1">the utilities for bootstrap <i class="fa-brands fa-bootstrap bg-white text-primary"></i></h2>
-        <div class="ms-1"> 
+            <div class="ms-1"> 
             <ol>
             <li>simplify the work</li>
             <li>make the code shorter </li>
             <li>optimize the number of files in the project</li>
             <li>make your website more responsive</li>
             </ol>
-        </div>
-            <h2 class="ms-1">the negative points in it <i class="fa-solid fa-heart-crack text-danger"></i></h2>
+        
+            <h2 class="ms-1">the negative points in it <i class="fa-solid fa-heart-crack text-danger" ></i></h2>
         <div class="ms-0 " > 
             <ol>                                    
             <li>make the code harder to understand and reduce readability</li>
@@ -55,16 +112,34 @@
         <div class="d-flex justify-content-end me-5">
         <button type="button" class="btn btn-success p-1 but "><a href="https://getbootstrap.com/docs/5.3" target="_blank">learn more</a></button>
         </div>
-        <div class="">
+        <h1 class="text-danger w-75 text-center ms-5">if you are interesting in web developement fill this form to join us noow ! </h1>
+        <section id="formee">
+          <form >
+            <label for="first-n">first name : </label>
+            <input type="text" id="first-n" placeholder="ex: ilyasse" >
+            <br>
+            <br>
+            <label for="last-n">last name : </label>
+            <input type="text" id="last-n" placeholder="ex: iyyad" >
+            <br>
+            <br>
+            <label for="email">email : </label>
+            <input type="text" id="email" placeholder="ex: ilyasseinsceco@gmail.com" >
+            <br>
+            <br>
+            <label for="phone number">phone number : </label>
+            <input type="text" id="phone number" placeholder="ex:0674721765" >
+          </form>
+          <button type="submit" class="btn btn-secondary p-1 m-2" style="position:relative; left:20%; translate: -50%; ">submit</button>
+        </section>
           <h3 class="ms-1 ">our social media :</h3>
           <div class="d-flex justify-content-start gap-4 ms-5 ">
               <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fs-2 soc " title="facebook" > </i></a>
               <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fs-2 soc" title="twitter"></i></a>
               <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fs-2 soc" title="instagram"></i></a>
               <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fs-2 soc" title="linkedin"></i></a>
-          </div>
         </div>
-        <footer class="bg-dark text-white p-3 position-absolute bottom-0 w-100 d-flex justify-content-between align-items-center h-25">
+        <footer class="bg-dark text-white p-3  d-flex justify-content-between align-items-center h-auto " id="foot" >
           <p class="w-25 h-auto" style="font-size:1vw;">
             lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
             lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
